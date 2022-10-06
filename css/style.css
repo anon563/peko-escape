@@ -1,0 +1,23 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background: url('../img/background.png');
+  /* background-color: #000; */
+  display: flex;
+  overflow: hidden;
+}
+
+#game-container {
+  margin: auto;
+  image-rendering: pixelated;
+  background: #000;
+  box-shadow: 0 0 2px #000;
+}
+
+canvas {
+  position: absolute;
+}

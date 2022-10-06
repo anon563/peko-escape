@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>PEKO ESCAPE - ペコエスケープ</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Hololive, Pekora, game, fangame, peko, escape, peko escape">
+    <meta name="description" content="PEKO ESCAPE - ペコエスケープ">
+    <meta name="author" content="sulpx">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Libs -->
+    <script src="js/lib/assets.js"></script>
+    <script src="js/lib/gameEngine.js"></script>
+    <script src="js/lib/particleManager.js"></script>
+    <script src="js/lib/mouse.js"></script>
+    <script src="js/lib/astar.js"></script>
+    <script src="js/lib/text.js"></script>
+
+    <!-- Game -->
+    <script src="js/game/scene.js"></script>
+    <script src="js/game/game.js"></script>
+
+    <script src="js/game/intro.js"></script>
+
+    <script src="js/game/data/unitData.js"></script>
+    <script src="js/game/data/tileData.js"></script>
+    <script src="js/game/data/itemData.js"></script>
+
+    <script src="js/game/faction.js"></script>
+    <script src="js/game/computer.js"></script>
+    <script src="js/game/player.js"></script>
+
+    <script src="js/game/cursor.js"></script>
+    <script src="js/game/action.js"></script>
+    <script src="js/game/actor.js"></script>
+    <script src="js/game/item.js"></script>
+    <script src="js/game/unit.js"></script>
+    <script>
+        window.onload = () => {
+            const game = new Game(new Assets());
+            game.assets.load().then(game.start());
+        }
+    </script>
+</head>
+
+</html>
